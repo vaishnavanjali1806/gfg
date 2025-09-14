@@ -3,9 +3,9 @@ class Solution {
 
      
         int tg = 0;
-        // fint current gas
+       
         int cg = 0;
-        // find index
+       
         int idx = 0;
         
         for(int i = 0; i < gas.length; i ++) {
