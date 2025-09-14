@@ -1,7 +1,7 @@
 class Solution {
     public int startStation(int[] gas, int[] cost) {
 
-      // find total gas
+     
         int tg = 0;
         // fint current gas
         int cg = 0;
