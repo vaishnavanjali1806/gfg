@@ -1,6 +1,6 @@
 class Solution {
     public int evaluatePostfix(String[] arr) {
-        // code here
+       
          Stack<Integer> stack = new Stack<>();
 
         for (String s : arr) {
@@ -26,7 +26,7 @@ class Solution {
                 case "/":
                     int a4 = stack.pop();
                     int b4 = stack.pop();
-                    // Floor division handling
+                  
                     int div = b4 / a4;
                     if (b4 % a4 != 0 && ((b4 < 0) ^ (a4 < 0))) {
                         div--; 
@@ -52,13 +52,13 @@ class Solution {
         Solution sol = new Solution();
 
         String[] arr1 = {"2", "3", "1", "*", "+", "9", "-"};
-        System.out.println(sol.evaluatePostfix(arr1)); // -4
+        System.out.println(sol.evaluatePostfix(arr1)); 
 
         String[] arr2 = {"2", "3", "^", "1", "+"};
-        System.out.println(sol.evaluatePostfix(arr2)); // 9
+        System.out.println(sol.evaluatePostfix(arr2)); 
 
         String[] arr3 = {"-8", "3", "/"};
-        System.out.println(sol.evaluatePostfix(arr3)); // -3 (floor division)
+        System.out.println(sol.evaluatePostfix(arr3)); 
     }
 
 }
