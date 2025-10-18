@@ -1,6 +1,4 @@
-/*
-class Node{
-    int data;
+
 
 
 class Solution {
